@@ -1,0 +1,37 @@
+# Wiz Configuration File
+
+# Project settings
+project:
+  name: "My Project"
+  version: "1.0.0"
+  description: "A sample project using Wiz"
+
+# Build settings
+build:
+  outputDir: "build/wiz"
+  resources:
+    - "src/main/resources/**"
+  dependencies:
+    - "libs/**"
+
+# Environment settings
+environment:
+  javaVersion: "17"
+  jvmArgs:
+    - "-Xmx2g"
+    - "-XX:+UseG1GC"
+
+# Logging settings
+logging:
+  level: "INFO"
+  file: "build/wiz/wiz.log"
+
+# Custom properties
+properties:
+  enableDebug: false
+  maxThreads: 4
+
+# Additional configuration
+additionalConfig:
+  customSetting1: "value1"
+  customSetting2: "value2"
