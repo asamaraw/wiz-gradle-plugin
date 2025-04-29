@@ -52,5 +52,5 @@ You can use this as a template for your own Wiz configuration.
 
 ## Requirements
 
-- Java 11 or higher
+- Java 17 or higher
 - Wiz CLI installed and available in PATH
