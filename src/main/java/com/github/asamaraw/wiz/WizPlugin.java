@@ -1,4 +1,4 @@
-package com.example.wiz;
+package com.github.asamaraw.wiz;
 
 import org.gradle.api.Plugin;
 import org.gradle.api.Project;

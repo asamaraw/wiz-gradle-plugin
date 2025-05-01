@@ -6,7 +6,7 @@ plugins {
 gradlePlugin {
     plugins {
         wizPlugin {
-            id = 'com.example.wiz'
+            id = 'com.github.asamaraw.wiz'
             implementationClass = 'com.example.wiz.WizPlugin'
         }
     }
