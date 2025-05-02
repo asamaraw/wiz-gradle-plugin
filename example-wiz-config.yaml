@@ -3,6 +3,7 @@
 # Project settings
 project:
   name: "My Project"
+  id: "de97b048-4f7e-4bda-907c-7303bdb36afc"
   version: "1.0.0"
   description: "A sample project using Wiz"
 
