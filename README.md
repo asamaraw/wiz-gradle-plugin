@@ -8,7 +8,7 @@ Add the plugin to your `build.gradle` file:
 
 ```groovy
 plugins {
-    id 'com.example.wiz' version '1.0.0'
+    id 'com.github.asamaraw.iz-gradle-plugin' version '0.1.0'
 }
 
 // Configure Wiz options
@@ -26,7 +26,7 @@ wiz {
 
 ```groovy
 plugins {
-    id 'com.example.wiz' version '1.0.0'
+    id 'om.github.asamaraw.iz-gradle-plugin' version '0.1.0'
 }
 
 wiz {
