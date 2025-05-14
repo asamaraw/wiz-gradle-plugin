@@ -8,47 +8,26 @@ Add the plugin to your `build.gradle` file:
 
 ```groovy
 plugins {
-    id 'com.github.asamaraw.iz-gradle-plugin' version '0.1.0'
-}
-
-// Configure Wiz options
-wiz {
-    options = '--your-options-here'
+    id 'com.github.asamaraw.wiz-gradle-plugin' version '0.1.0'
 }
 ```
 
 ### Available Tasks
 
-- `wizRun`: Runs the Wiz CLI with the configured options
-- `wizBuild`: Builds using the Wiz CLI with the configured options
+- `wizScanDir`: Runs a directory scan using the Wiz CLI. This task requires the project ID (projectId) and repository name (repositoryName) to be configured in the Wiz extension. It executes the command `wizcli dir scan` with the project and repository details.
 
 ## Example
 
 ```groovy
 plugins {
-    id 'om.github.asamaraw.iz-gradle-plugin' version '0.1.0'
-}
-
-wiz {
-    options = '--config wiz-config.yaml --verbose'
+    id 'com.github.asamaraw.wiz-gradle-plugin' version '0.1.0'
 }
 
 // You can also override options per task
-wizRun {
-    args '--config other-config.yaml'
+wizScanDir {
+    args '--projectId de97b048-4f7e-4bda-907c-7303bdb36afc --repositoryName example-repo'
 }
 ```
-
-## Example Configuration
-
-An example Wiz configuration file is provided at [example-wiz-config.yaml](example-wiz-config.yaml). This file includes common settings for:
-- Project information
-- Build settings
-- Environment configuration
-- Logging settings
-- Custom properties
-
-You can use this as a template for your own Wiz configuration.
 
 ## Requirements
 

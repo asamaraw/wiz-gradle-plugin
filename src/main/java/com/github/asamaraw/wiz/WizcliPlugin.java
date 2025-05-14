@@ -33,8 +33,8 @@ public class WizcliPlugin implements Plugin<Project> {
               if (repositoryName == null) {
                 throw new IllegalStateException("Repository name not configured in Wiz extension");
               }
-              task.args("--project", projectId);
-              task.args("--name", repositoryName);
+              task.args("--projectId", projectId);
+              task.args("--repositoryName", repositoryName);
             });
   }
 }
